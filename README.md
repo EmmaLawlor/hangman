@@ -29,3 +29,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 -----
 Happy coding!
+
+## Credits 
+
+- List of random words generate using [Random Word Generator](https://randomwordgenerator.com/)
