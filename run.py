@@ -64,6 +64,7 @@ def display_hangman(word):
             if guess not in word:
                 print(f'{guess} is not in the word, try again')
                 stage += 1
+                print(HANGMAN_PICS[stage])
                 guessed_letters.append(guess)
             elif guess in guessed_letters:
                 print(f'You already guessed {guess}, try again')
