@@ -33,3 +33,4 @@ Happy coding!
 ## Credits 
 
 - List of random words generate using [Random Word Generator](https://randomwordgenerator.com/)
+- Stages of hangman taken from [kiteco GitHub](https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/hangman.py)
