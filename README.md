@@ -310,6 +310,4 @@ Make a list of sites you used images from. If you used several sites try to matc
 
 ### Acknowledgments
 
-This is the section where you refer to code examples, mentors, blogs, stack overflow answers and videos that helped you accomplish your end project. Even if it's an idea that you updated you should note the site and why it was important to your completed project.
-
-If you used a CodeInstitute Instructional project as a starting point. Make note of that here too.
+- Code for replacing underscores with correct letter guesses adapted from [this tutorial](https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/hangman.py)

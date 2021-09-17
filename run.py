@@ -38,12 +38,14 @@ HANGMAN_PICS = ['''
     / \  |
         ===''']
 
+
 def get_random_word(words):
     """
     Selects random word from word list and returns the word in loswercase
     """
     word = random.choice(words)
     return word
+
 
 def display_hangman(word):
     """
@@ -71,9 +73,11 @@ def display_hangman(word):
                 guessed_letters.append(guess)
             elif guess in guessed_letters:
                 print(f'You already guessed {guess}, try again')
-            else: 
+            else:
                 print(f'{guess} is in the word!')
                 guessed_letters.append(guess)
+                # code for replacing underscores with letters adapted from
+                # https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/hangman.py
                 word_as_list = list(progress)
                 indices = [i for i, letter in enumerate(word) if letter == guess]
                 for index in indices:
@@ -85,9 +89,9 @@ def display_hangman(word):
                 if "_" not in progress:
                     print(f'Congrats! You correctly guessed the answer: {word}')
                     break
-        else: print('Invalid input')
+        else:
+            print('Invalid input')
 
 
 word = get_random_word(words)
 display_hangman(word)
-
