@@ -69,7 +69,7 @@ def display_hangman(word):
     Gives user appropraite feedback.
     Breaks loop when user has correctly guessed all letters
     """
-    while stage < 7:
+    while stage < 6:
         guess = input('Choose a letter: \n')
         if guess.lower().strip().isalpha():
             if guess not in word:
@@ -79,9 +79,7 @@ def display_hangman(word):
                 print('\n')
                 print(progress)
                 guessed_letters.append(guess)
-            elif guess in guessed_letters:
-                print(f'You already guessed {guess}, try again')
-            else:
+            elif guess in word:
                 print(f'{guess} is in the word!')
                 guessed_letters.append(guess)
                 # code for replacing underscores with letters adapted from
@@ -97,9 +95,28 @@ def display_hangman(word):
                 if "_" not in progress:
                     print(f'Congrats! You correctly guessed the answer: {word}')
                     break
+            else:
+                print(f'You already guessed {guess}, try again')
         else:
             print('Invalid input')
 
 
+def play_again():
+    """
+    Asks user if the want to play again by entering Y or N
+    Calls display_hangman function while user wants to play again
+    """
+    play = input('Would you like to play again? (Y/N)')
+    if play.upper() == 'Y':
+        word = get_random_word(words)
+        display_hangman(word)
+    elif play.upper() == 'N':
+        print('Thanks for playing!')
+    else:
+        print('Invalid choice')
+        input('Would you like to play again? (Y/N)')
+
+
 word = get_random_word(words)
 display_hangman(word)
+play_again()
