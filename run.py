@@ -61,6 +61,14 @@ def display_hangman(word):
     print('\n')
     print(progress)
     print('\n')
+
+    """
+    While user has lost less than 7 lives,
+    requests a letter from user & validates input to ensure it is a letter
+    checks if the letter is in the word and if it has been guessed already.
+    Gives user appropraite feedback.
+    Breaks loop when user has correctly guessed all letters
+    """
     while stage < 7:
         guess = input('Choose a letter: \n')
         if guess.lower().strip().isalpha():
