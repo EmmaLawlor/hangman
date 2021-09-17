@@ -53,10 +53,11 @@ def display_hangman(word):
     """
     stage = 0
     guessed_letters = []
+    progress = '_' * len(word)
     print("Let's play Hangman!\n")
     print(HANGMAN_PICS[stage])
     print('\n')
-    print('    ','_' * len(word))
+    print(progress)
     print('\n')
     while stage < 7:
         guess = input('Choose a letter: \n')
@@ -65,10 +66,25 @@ def display_hangman(word):
                 print(f'{guess} is not in the word, try again')
                 stage += 1
                 print(HANGMAN_PICS[stage])
+                print('\n')
+                print(progress)
                 guessed_letters.append(guess)
             elif guess in guessed_letters:
                 print(f'You already guessed {guess}, try again')
-            else: print(f'{guess} is in the word!')
+            else: 
+                print(f'{guess} is in the word!')
+                guessed_letters.append(guess)
+                word_as_list = list(progress)
+                indices = [i for i, letter in enumerate(word) if letter == guess]
+                for index in indices:
+                    word_as_list[index] = guess
+                    progress = "".join(word_as_list)
+                    print(HANGMAN_PICS[stage])
+                    print('\n')
+                    print(progress)
+                if "_" not in progress:
+                    print(f'Congrats! You correctly guessed the answer: {word}')
+                    break
         else: print('Invalid input')
 
 
