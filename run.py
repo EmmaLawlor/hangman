@@ -58,9 +58,9 @@ def display_hangman(word):
     guessed_letters = []
     progress = '_' * len(word)
     print(f"{Fore.YELLOW}Lets play Hangman!{Style.RESET_ALL}")
-    print(HANGMAN_PICS[stage])
+    print(Fore.CYAN + HANGMAN_PICS[stage])
     print('\n')
-    print(progress)
+    print(progress + Style.RESET_ALL)
     print('\n')
 
     """
