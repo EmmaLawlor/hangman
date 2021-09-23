@@ -17,9 +17,7 @@ Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a tab
 ====================================== The Sections you Fill in are below ==============================
 
 # PROJECT NAME
-*replace the **PROJECT NAME** header with your project's name*
-- Screenshot of logo/navigation of mobile deployed site
-- Include a link to deployed project with one line explanation of project
+Hanagman
 
 ## Author
 Emma Lawlor
@@ -73,9 +71,8 @@ You might want to include subsections that include how the data in the model is 
 
 
 ## Libraries used
-List out the python libraries you purposefully used in your project and why. You can look at your requirements.txt file and go back to https://pypi.org/ to rediscover the purpose of a library if needed.
-
-A bulleted list is a good presentation for this information.
+- Random module imported to allow the program to select a random word from the words.py file for use in gameplay. 
+- Colorama module imported to allow styling and coloring of text displayed to the user in the terminal. This was used to enhance the user's experience and make the game more visually attractive. 
 
 ## Testing
 
