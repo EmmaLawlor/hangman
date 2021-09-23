@@ -1,5 +1,6 @@
 import random
 from words import words
+from colorama import Fore, Back, Style
 
 HANGMAN_PICS = ['''
      +---+
@@ -56,7 +57,7 @@ def display_hangman(word):
     stage = 0
     guessed_letters = []
     progress = '_' * len(word)
-    print("Let's play Hangman!\n")
+    print(f"{Fore.YELLOW}Lets play Hangman!{Style.RESET_ALL}")
     print(HANGMAN_PICS[stage])
     print('\n')
     print(progress)
