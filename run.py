@@ -71,14 +71,19 @@ def display_hangman(word):
     """
     while stage < 6:
         guess = input('Choose a letter: \n')
-        if guess.lower().strip().isalpha():
+        if guess.lower().strip().isalpha() and len(guess) == 1:
             if guess not in word:
-                print(f'{guess} is not in the word, try again')
-                stage += 1
-                print(HANGMAN_PICS[stage])
-                print('\n')
-                print(progress)
-                guessed_letters.append(guess)
+                if guess in guessed_letters:
+                    print(f'You already guessed {guess}, try again')
+                else:
+                    print(f'{guess} is not in the word, try again')
+                    stage += 1
+                    print(HANGMAN_PICS[stage])
+                    print('\n')
+                    print(progress)
+                    guessed_letters.append(guess)
+            elif guess in word and guess in guessed_letters:
+                print(f'You already guessed {guess}, try again')
             elif guess in word:
                 print(f'{guess} is in the word!')
                 guessed_letters.append(guess)
@@ -95,8 +100,6 @@ def display_hangman(word):
                 if "_" not in progress:
                     print(f'Congrats! You correctly guessed the answer: {word}')
                     break
-            else:
-                print(f'You already guessed {guess}, try again')
         else:
             print('Invalid input')
 
