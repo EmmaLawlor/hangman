@@ -81,9 +81,9 @@ def display_hangman(word):
                     print(f'{guess} is not in the word, try again')
                     print('\n')
                     stage += 1
-                    print(HANGMAN_PICS[stage])
+                    print(Fore.CYAN + HANGMAN_PICS[stage])
                     print('\n')
-                    print(progress)
+                    print(progress + Style.RESET_ALL)
                     guessed_letters.append(guess)
             elif guess in word and guess in guessed_letters:
                 print(f'You already guessed {guess}, try again')
@@ -99,9 +99,9 @@ def display_hangman(word):
                 for index in indices:
                     word_as_list[index] = guess
                     progress = "".join(word_as_list)
-                    print(HANGMAN_PICS[stage])
+                    print(Fore.CYAN + HANGMAN_PICS[stage])
                     print('\n')
-                    print(progress)
+                    print(progress + Style.RESET_ALL)
                 if "_" not in progress:
                     print(f'Congrats! You correctly guessed the answer: {word}')
                     print('\n')
@@ -115,7 +115,7 @@ def play_again():
     Asks user if the want to play again by entering Y or N
     Calls display_hangman function while user wants to play again
     """
-    play = input('Would you like to play again? (Y/N) \n')
+    play = input(f'{Fore.YELLOW}Would you like to play again? (Y/N)')
     if play.upper() == 'Y':
         word = get_random_word(words)
         display_hangman(word)
@@ -123,7 +123,7 @@ def play_again():
         print('Thanks for playing! \n')
     else:
         print('Invalid choice \n')
-        input('Would you like to play again? (Y/N) \n')
+        input(f'Would you like to play again? (Y/N){Style.RESET_ALL}')
 
 
 word = get_random_word(words)
