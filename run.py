@@ -75,8 +75,10 @@ def display_hangman(word):
             if guess not in word:
                 if guess in guessed_letters:
                     print(f'You already guessed {guess}, try again')
+                    print('\n')
                 else:
                     print(f'{guess} is not in the word, try again')
+                    print('\n')
                     stage += 1
                     print(HANGMAN_PICS[stage])
                     print('\n')
@@ -84,8 +86,10 @@ def display_hangman(word):
                     guessed_letters.append(guess)
             elif guess in word and guess in guessed_letters:
                 print(f'You already guessed {guess}, try again')
+                print('\n')
             elif guess in word:
                 print(f'{guess} is in the word!')
+                print('\n')
                 guessed_letters.append(guess)
                 # code for replacing underscores with letters adapted from
                 # https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/hangman.py
@@ -99,9 +103,10 @@ def display_hangman(word):
                     print(progress)
                 if "_" not in progress:
                     print(f'Congrats! You correctly guessed the answer: {word}')
+                    print('\n')
                     break
         else:
-            print('Invalid input')
+            print('Invalid input \n')
 
 
 def play_again():
@@ -109,15 +114,15 @@ def play_again():
     Asks user if the want to play again by entering Y or N
     Calls display_hangman function while user wants to play again
     """
-    play = input('Would you like to play again? (Y/N)')
+    play = input('Would you like to play again? (Y/N) \n')
     if play.upper() == 'Y':
         word = get_random_word(words)
         display_hangman(word)
     elif play.upper() == 'N':
-        print('Thanks for playing!')
+        print('Thanks for playing! \n')
     else:
-        print('Invalid choice')
-        input('Would you like to play again? (Y/N)')
+        print('Invalid choice \n')
+        input('Would you like to play again? (Y/N) \n')
 
 
 word = get_random_word(words)
