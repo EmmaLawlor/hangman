@@ -71,25 +71,27 @@ def display_hangman(word):
     Breaks loop when user has correctly guessed all letters
     """
     while stage < 6:
-        guess = input('Choose a letter: \n')
+        guess = input(f'{Fore.YELLOW}Choose a letter: {Style.RESET_ALL}')
+        print('\n')
         if guess.lower().strip().isalpha() and len(guess) == 1:
             if guess not in word:
                 if guess in guessed_letters:
                     print(f'You already guessed {guess}, try again')
                     print('\n')
                 else:
-                    print(f'{guess} is not in the word, try again')
+                    print(f'{Fore.RED}{guess} is not in the word, try again{Style.RESET_ALL}')
                     print('\n')
                     stage += 1
                     print(Fore.CYAN + HANGMAN_PICS[stage])
                     print('\n')
                     print(progress + Style.RESET_ALL)
+                    print('\n')
                     guessed_letters.append(guess)
             elif guess in word and guess in guessed_letters:
                 print(f'You already guessed {guess}, try again')
                 print('\n')
             elif guess in word:
-                print(f'{guess} is in the word!')
+                print(f'{Fore.GREEN}{guess} is in the word!{Style.RESET_ALL}')
                 print('\n')
                 guessed_letters.append(guess)
                 # code for replacing underscores with letters adapted from
@@ -102,8 +104,9 @@ def display_hangman(word):
                     print(Fore.CYAN + HANGMAN_PICS[stage])
                     print('\n')
                     print(progress + Style.RESET_ALL)
+                    print('\n')
                 if "_" not in progress:
-                    print(f'Congrats! You correctly guessed the answer: {word}')
+                    print(f'{Fore.GREEN}Congrats! You correctly guessed the answer: {word}{Style.RESET_ALL}')
                     print('\n')
                     break
         else:
@@ -116,6 +119,7 @@ def play_again():
     Calls display_hangman function while user wants to play again
     """
     play = input(f'{Fore.YELLOW}Would you like to play again? (Y/N)')
+    print('\n')
     if play.upper() == 'Y':
         word = get_random_word(words)
         display_hangman(word)
