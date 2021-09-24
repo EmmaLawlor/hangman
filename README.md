@@ -188,39 +188,7 @@ def yes_no(question):
 ## Deployment
 
 ### Requirements
-If the user is required to have certain keys and credentials you should include this section with diretions on how to get the necessary information.
-ex)
-1. **Google Account:** In order to have this program work, you need a google account. If you don't have one  [Create a google account](https://accounts.google.com/Signup)
-2. **Google APIs**
-    1. in a new incognito tab, log into your new google account.
-    1. then update the url to be: https://console.cloud.google.com/getting-started?pli=1 
-        
-        **GOOGLE DRIVE API Access**
-        1.  create a new project for this, call it XXXXXX (You might want to refer to what you see in this video: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/071036790a5642f9a6f004f9888b6a45/ at the bottom of the screen to write out steps.)
-        2. Then click on Add APIs and Services and select Libraries
-        3. Search for Google Drive
-        4. Click Enable
-        5. Click Create Credentials
-        6. Select Google Drive API from the drop down, Application Data, then no and click the Next Button
-        7.  (https://developers.google.com/drive/api/v3/enable-drive-api) 
-        8. for service account details fill in a service account name ex) xxx_API, then click Create and Continue
-        9. For the Accoun acces, select Role: Basic/Editor then continue
-        10. Then Click Done
-        11. Now select the newly created service account
-        12. Click on the KEYS Tab
-        13. Click Add Key
-        14. Select JSON type (right click to show in folder so you know where the file was saved.
-        
-        **GOOGLE SHEETS API Access**
-        You may need to us the back button get to the APIS & SErvices section from where you were.
-        1. click the Libray  Tab and serarch for Google Sheets
-        2. click enable
 
-3. The downloaded credentialsJSON file is basically your creds.json file that you need to put into your heroku settings or gitpod environment to access your google drive.
-
-4. Google Sheet Template
-  - If you had to create specific sheets for your project, instruct users to make their own copy of it from yours and rename it back to what the python project expects
-  - And don't forget to share the spreadsheet in question with the client_email from the creds.json 
 ### Gitpod
 This section should describe the process someone would have to go through to get the local working in gitpod.  Such as install requirements.txt  and setting up a creds.json file that is in the gitignore and keeping their workspace.
 
@@ -248,48 +216,18 @@ pip3 install -r requirements.txt
 
 
 ### Heroku
-This section should describe the process you went through to deploy the project to Heroku. Include screenshots if you think they would make the process easier.
-
-You may want to re-watch the [python essentials deployment video](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/?child=first) when writing up this section.
-
-
-If you have project settings required for Heroku, provide a table of the keys and values.
-Do not share your personal keys but either cut them out of the screen shot or say <YOUR_VALUE> and include links on how the user would obtain such values.
-
-#### Fork the repository
-Make a fork so you have a copy of the repository in your own git hub account: https://github.com/maliahavlicek/portfolio_project_03
-
-![image](https://user-images.githubusercontent.com/23039742/132136504-eb79a6f3-0205-4c82-80c2-eef136ec7e4c.png)
-
-
-#### New Project
-Log into Heroku and create a new project. Name it something like XXX_coders_bistro.
-
-
-#### Settings
-On the settings tab you have to address two things:
-1. **Config Vars**
-
-  ![image](https://user-images.githubusercontent.com/23039742/132135869-215d2e0f-805d-40a8-a8c2-fb1098e2645d.png)
-
-  At a bar minimum you should show the user that they need to add the PORT. 8000 key value pair.
-
-
-2. **Build Packs**
-
-  ![image](https://user-images.githubusercontent.com/23039742/132135918-28cac112-7766-4277-905c-4a4963d8442d.png)
-
-  add Python Then Node.js
-
-
-#### Deploy
-1. Set up to github and select the correct repository:
-
-  ![image](https://user-images.githubusercontent.com/23039742/132136113-c257c921-d10c-4ccc-af09-6a1d25136395.png)
-
-2. Deploy either manual or automatic
-
-![image](https://user-images.githubusercontent.com/23039742/132136241-9d76fabb-39f0-4696-bc5f-047398fdaf41.png) 
+![image](https://user-images.githubusercontent.com/84344402/134727186-9f0dfafc-5120-44cc-9209-90eb034a0a79.png)
+![image](https://user-images.githubusercontent.com/84344402/134727452-cd6a98e8-707b-47d4-a5be-308a98686927.png)
+![image](https://user-images.githubusercontent.com/84344402/134727805-094eda93-7cc2-4706-8502-90328cc18646.png)
+![image](https://user-images.githubusercontent.com/84344402/134728080-e2b67f15-3e4c-42e0-9cad-69541ae922ee.png)
+![image](https://user-images.githubusercontent.com/84344402/134728146-26f39c89-8747-419d-bc7f-406181bbe576.png)
+![image](https://user-images.githubusercontent.com/84344402/134728191-63929f98-654c-43a4-a732-e98563b7ec66.png)
+![image](https://user-images.githubusercontent.com/84344402/134728674-3b2737d8-3d12-4ef8-917f-086cc792b03d.png)
+![image](https://user-images.githubusercontent.com/84344402/134729055-02112055-ae23-4c5d-97e9-5a8aaad1891c.png)
+![image](https://user-images.githubusercontent.com/84344402/134729099-5b68a72f-f0c8-49ab-bd55-ad6db45a664c.png)
+![image](https://user-images.githubusercontent.com/84344402/134729273-a8fb68eb-d0cc-4331-b958-363b7de96d52.png)
+![image](https://user-images.githubusercontent.com/84344402/134729383-70980a37-810a-4161-976b-3e6663a30b1d.png)
+![image](https://user-images.githubusercontent.com/84344402/134729634-35e5c778-0071-4747-b72a-37491f01981a.png)
 
 ## Credits
 
