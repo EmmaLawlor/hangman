@@ -111,6 +111,8 @@ def display_hangman(word):
                     break
         else:
             print('Invalid input \n')
+    print(f'{Fore.RED}Game Over! The word was {word}{Style.RESET_ALL}')
+    print('\n')
 
 
 def play_again():
