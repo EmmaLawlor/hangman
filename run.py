@@ -57,7 +57,6 @@ def display_hangman(word):
     stage = 0
     guessed_letters = []
     progress = '_' * len(word)
-    print(f"{Fore.YELLOW}Lets play Hangman!{Style.RESET_ALL}")
     print(Fore.CYAN + HANGMAN_PICS[stage])
     print('\n')
     print(progress + Style.RESET_ALL)
@@ -131,7 +130,13 @@ def play_again():
         print('Invalid choice \n')
         input(f'Would you like to play again? (Y/N){Style.RESET_ALL}')
 
+def main(): 
+    """
+    Run hangman game functions
+    """
+    word = get_random_word(words)
+    display_hangman(word)
+    play_again()
 
-word = get_random_word(words)
-display_hangman(word)
-play_again()
+print(f"{Fore.YELLOW}Lets play Hangman!{Style.RESET_ALL}")
+main()
