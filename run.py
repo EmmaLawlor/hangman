@@ -44,6 +44,7 @@ class Hangman:
         self.word = random.choice(words)
         self.stage = 0
         self.guessed_letters = []
+        self.guessed_words = []
         self.progress = '-' * len(self.word)
         self.games_played = 0
         self.games_won = 0
@@ -87,7 +88,7 @@ class Hangman:
                     for index in indices:
                         word_as_list[index] = guess
                         self.progress = "".join(word_as_list)
-                    if "_" not in self.progress:
+                    if "-" not in self.progress:
                         print(f'{Fore.GREEN}Congrats! You correctly guessed the answer: {self.word}{Style.RESET_ALL}')
                         print('\n')
                         self.games_won += 1
@@ -128,9 +129,9 @@ class Hangman:
             self.guessed_letters = []
             self.guessed_words = []
             self.word = random.choice(words)
-            self.progress = '_' * len(self.word)
+            self.progress = '-' * len(self.word)
             self.games_played += 1
-            self.play()
+            self.play_hangman()
         elif play == 'N':
             print('Thanks for playing! \n')
             print(f'You won {self.games_won} out of {self.games_played} games')
