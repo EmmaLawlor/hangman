@@ -113,6 +113,8 @@ class Hangman:
             else:
                 print('Invalid input \n')
         if self.stage >= 6:
+            print(Fore.CYAN + HANGMAN_PICS[self.stage])
+            print('\n')
             print(f'{Fore.RED}Game Over! The word was {self.word}{Style.RESET_ALL}')
             print('\n')
         self.play_again()
