@@ -1,6 +1,6 @@
 import random
 from words import words
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 
 HANGMAN_PICS = ['''
      +---+
@@ -38,6 +38,7 @@ HANGMAN_PICS = ['''
     /|\  |
     / \  |
         ===''']
+
 
 class Hangman:
     """
@@ -160,6 +161,7 @@ def main():
     """
     game = Hangman()
     game.play_hangman()
+
 
 print(f"{Fore.YELLOW}Lets play Hangman!{Style.RESET_ALL}")
 main()
