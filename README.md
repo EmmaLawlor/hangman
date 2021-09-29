@@ -19,10 +19,9 @@ Hangman
 Emma Lawlor
 
 ## Project Overview
-- Include a recording of site that shows the terminal interaction.
-  https://chrome.google.com/webstore/detail/loom-for-chrome/liecbddmkiiihnedobmlmillhodjkdmb is a very intuitive and free tool to do a web recording.
-- Then you can use https://cloudconvert.com/mp4-to-gif to convert the mp4 to a gif and just paste it into the readme via git hub and it'll resovle itself.
 A simple interactive hangman game, written in Python. This game randomly chooses a word from a list of words. The user is then prompted to guess the letters of the word, or the word itself, until they have correctly guessed the word or until they run out of lives. Each incorrect answer adds to the hangman image, with the game ending when the hangman has been fully completed. 
+
+![Google Chrome - Python Terminal by Code Institute - Google Chrome](https://user-images.githubusercontent.com/84344402/135355526-41012bfc-9773-4a9c-8ed8-eb6079be6303.gif)
 
 Deployed Site:
 https://hangman-emma-lawlor.herokuapp.com/
