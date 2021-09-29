@@ -1,7 +1,3 @@
-# OVERVIEW
-
-This template was made as a guide to ensure you cover assessment criteria in your third milestone write up. It is specific to the **PORTFOLIO 3: Python Essentials** project. It was based off the [battleship readme](https://codeinstitute.s3.amazonaws.com/CSSEssentials/p3-readme.png) with a few additions to help elevate you to possible distinction status.
-
 ## Helpful tools
 
 Markdown's not all that easy so sometimes you may want to use some tools to make tables. 
@@ -76,10 +72,7 @@ Paragraph or bullet points of how the user initiates the program and interfaces 
 
 ### Future Features
 
-Use this section to discuss plans for additional features to be implemented in the future:
-
-If you end up not developing some features you hoped to implement, you can include those in this section.
-
+- Score Tracking: By linking with Google Sheets, the game could ask the user for their name and email address, store their score details and email them a copy of their results upon exiting the game. 
 
 ## Design Documents
 
@@ -187,43 +180,13 @@ For more information you can visit: https://docs.github.com/en/issues/organizing
 
 ### Defect Tracking
 
-You can use git hub issues to track any bugs rather than a spread sheet and just link to that page for your repository.
-
-![image](https://user-images.githubusercontent.com/23039742/130149053-bf506388-a791-426e-8ffc-a56c1212e01c.png)
-
-You should created issues in real time and close them out as you fix the bugs. Include steps to recreate and screenshots.
-
-Create a link to the issues dashboard  of your repository
-[ci_insights isssues](https://github.com/maliahavlicek/ci_mentor_insights/issues)
-
 ### Defects of Note
-Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and how you finally ended up resolving them.
-
-
+- Any defects which occurred during development were tracked using the GitHub Issues section of this repository, which can be found [here](https://github.com/EmmaLawlor/hangman/issues).
+- Details of each bug were noted as they were discovered, with screenshots taken to demonstrate the problem where possible.
+- The GitHub Issues section allowed for closeout of defects as they were rectified, again using screenshots to show the solution when possible.
+- 
 ### Outstanding Defects
-It's ok to not resolve all the defects you found. If you know of something that isn't quite right, list it out and explain why you chose not to resolve it.
-
-### Commenting Code
-
-Make sure you  use triple double quotes to document fuctions and classes.
- Here'a  documentation worthy example:
-```$python
-def yes_no(question):
-    """
-    Function to ask a simple yes no question of the user.
-    :param question: String displayed as the question
-    :return: answer: String equal to "1" or "2" representing yes or no respectfully
-    """
-    print(question)
-    print("yes = 1")
-    print("no = 2")
-    answer = input("enter your answer here \n").strip()
-    while answer not in ("1", "2"):
-        print("please choose 1 for yes and 2 for no")
-        answer = input("enter your answer here \n").strip()
-    return answer
-
-```
+- No outstanding defects have been noted. 
 
 ## Deployment
 
