@@ -17,7 +17,7 @@ Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a tab
 ====================================== The Sections you Fill in are below ==============================
 
 # PROJECT NAME
-Hanagman
+Hangman
 
 ## Author
 Emma Lawlor
@@ -26,8 +26,10 @@ Emma Lawlor
 - Include a recording of site that shows the terminal interaction.
   https://chrome.google.com/webstore/detail/loom-for-chrome/liecbddmkiiihnedobmlmillhodjkdmb is a very intuitive and free tool to do a web recording.
 - Then you can use https://cloudconvert.com/mp4-to-gif to convert the mp4 to a gif and just paste it into the readme via git hub and it'll resovle itself.
-- One or two sentences providing an overview of your project.
-- Include a link to your deployed website
+A simple interactive hangman game, written in Python. This game randomly chooses a word from a list of words. The user is then prompted to guess the letters of the word, or the word itself, until they have correctly guessed the word or until they run out of lives. Each incorrect answer adds to the hangman image, with the game ending when the hangman has been fully completed. 
+
+Deployed Site:
+https://hangman-emma-lawlor.herokuapp.com/
 
 ## Table of Contents
 Generate after readme is complete for UX and below
@@ -62,17 +64,31 @@ If you end up not developing some features you hoped to implement, you can inclu
 ![image](https://user-images.githubusercontent.com/84344402/133690510-8f1d770e-ccfe-4bea-908d-a1321736cb1d.png)
 
 ## Data Model
-In this section write our your data model(s).
 
-You might want to include subsections that include how the data in the model is . initialized and then the methods that you created to update it through the program.
+The class 'Hangman' is used as the data model for the game. 
 
-![image](https://user-images.githubusercontent.com/23039742/130148204-b56406bf-0fff-48f3-9dee-2f3cdbe67cc5.png)
-
+The __init__ method initialises the following attributes for use in all instances of the class:
+- self.word: uses the random method to choose a random word from the provided list in the words.py file. This is the word used for gameplay, which the user will try to decipher by guessing letters.
+- self.stage: Used to display the correct version of the 'Hangman' image. The stage is incremented by 1 each time the user enters an incorrect letter, therefore displaying the next stage of the hangman each time an incorrect letter is entered.
+- self.guessed_letters: An empty list, to which all letters guessed by the user throughout the course of a game are added. This list is vital in gameplay, as it allows us to check if the user has already guessed the letter. If the letter has already been guessed, the user is advised of this and is asked to choose again. 
+- self.guessed_words: As with guessed_words, this starts as an empty list. If the user chooses to guess an entire word, it is then added to this list. If they guess another word, this list is used to check if the wprd has already been guessed. 
+- self.games_played: Starting at 0, this number is increased by 1 each time the user completes a game. 
+- self.games_won: Again starting at 0, this is increased by 1 each time the user correctly completes the word and wins the game. A combination of games_played and games_won are used to return the user's overall result for the session when they choose to exit the game.  
 
 
 ## Libraries used
 - Random module imported to allow the program to select a random word from the words.py file for use in gameplay. 
 - Colorama module imported to allow styling and coloring of text displayed to the user in the terminal. This was used to enhance the user's experience and make the game more visually attractive. 
+  - The main game text is yellow, with the hangman image and dashes representing letters are cyan.
+  ![image](https://user-images.githubusercontent.com/84344402/135340001-b1b364be-b163-4216-813a-1d4fc6b1bc8b.png)
+  
+  - An incorrect guess is displayed in red text
+  
+  ![image](https://user-images.githubusercontent.com/84344402/135340201-dea4916c-4c58-4a36-b3d0-005642b6ed8a.png)
+  
+  - A correct guess is displayed in green text 
+  
+  ![image](https://user-images.githubusercontent.com/84344402/135340338-d41dc63d-e160-4aef-a1e5-3b8c1be07ae3.png)
 
 ## Testing
 
