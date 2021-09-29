@@ -80,6 +80,7 @@ The __init__ method initialises the following attributes for use in all instance
 - Random module imported to allow the program to select a random word from the words.py file for use in gameplay. 
 - Colorama module imported to allow styling and coloring of text displayed to the user in the terminal. This was used to enhance the user's experience and make the game more visually attractive. 
   - The main game text is yellow, with the hangman image and dashes representing letters are cyan.
+  
   ![image](https://user-images.githubusercontent.com/84344402/135340001-b1b364be-b163-4216-813a-1d4fc6b1bc8b.png)
   
   - An incorrect guess is displayed in red text
