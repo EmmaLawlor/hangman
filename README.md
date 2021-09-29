@@ -236,10 +236,8 @@ This project runs in the Code Institute provided Python Terminal simulator. The 
 
 - List of random words generate using [Random Word Generator](https://randomwordgenerator.com/)
 - Stages of hangman taken from (https://inventwithpython.com/invent4thed/chapter8.html)
-
-### Media
-
-Make a list of sites you used images from. If you used several sites try to match up each image to the correct site. This includes attribution for icons if they came from font awesome or other sites, give them credit.
+- Gameplay screen recorded using [Loom](https://www.loom.com/)
+- Loom video converted to GIF format using [CloudConvert](https://cloudconvert.com/mp4-to-gif)
 
 ### Acknowledgments
 
