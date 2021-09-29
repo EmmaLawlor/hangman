@@ -135,6 +135,7 @@ class Hangman:
             self.games_played += 1
             self.play_hangman()
         elif play == 'N':
+            self.games_played += 1
             print('Thanks for playing! \n')
             print(f'You won {self.games_won} out of {self.games_played} games')
         else:
