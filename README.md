@@ -30,7 +30,11 @@ https://hangman-emma-lawlor.herokuapp.com/
 Generate after readme is complete for UX and below
 
 ## How To Play/Use
-Paragraph or bullet points of how the user initiates the program and interfaces with it. You could have videos of each bit if you want and ditact what the user should do.
+- On visiting the site, the game initialises with a "Let's Play Hangman" message
+- Start by choosing a letter
+- Keep guessing letters until the word is correctly completed or until all lives have been used and game is over. 
+- Each time a letter is chosen, it is checked to see if it is correct/incorrect with the relevant message displayed to the user. 
+- At the end of the game, play again by entereing 'Y' or finish the game by entering 'N'
 
 ## Features
 
