@@ -85,21 +85,25 @@ class Hangman:
                         self.stage += 1
                         self.guessed_letters.append(guess)
                 elif guess.isalpha() and guess in self.word:
-                    print(f'{Fore.GREEN}{guess} is in the word!{Style.RESET_ALL}')
-                    print('\n')
-                    self.guessed_letters.append(guess)
-                    # code for replacing underscores with letters adapted from
-                    # https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/hangman.py
-                    word_as_list = list(self.progress)
-                    indices = [i for i, letter in enumerate(self.word) if letter == guess]
-                    for index in indices:
-                        word_as_list[index] = guess
-                        self.progress = "".join(word_as_list)
-                    if "-" not in self.progress:
-                        print(f'{Fore.GREEN}Congrats! You correctly guessed the answer: {self.word}{Style.RESET_ALL}')
+                    if guess in self.guessed_letters:
+                        print(f'You already guessed {guess}, try again')
                         print('\n')
-                        self.games_won += 1
-                        break
+                    else:
+                        print(f'{Fore.GREEN}{guess} is in the word!{Style.RESET_ALL}')
+                        print('\n')
+                        self.guessed_letters.append(guess)
+                        # code for replacing underscores with letters adapted from
+                        # https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/hangman.py
+                        word_as_list = list(self.progress)
+                        indices = [i for i, letter in enumerate(self.word) if letter == guess]
+                        for index in indices:
+                            word_as_list[index] = guess
+                            self.progress = "".join(word_as_list)
+                        if "-" not in self.progress:
+                            print(f'{Fore.GREEN}Congrats! You correctly guessed the answer: {self.word}{Style.RESET_ALL}')
+                            print('\n')
+                            self.games_won += 1
+                            break
 
             elif guess.isalpha() and guess == self.word:
                 print(f'{Fore.GREEN}Congrats! You correctly guessed the answer: {self.word}{Style.RESET_ALL}')
