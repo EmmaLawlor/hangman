@@ -106,8 +106,6 @@ If the line is too long just add
 ```
 There is a space before the # and after it to skip the quality assurance for that line.
 
-
-
 ### Manual Testing
 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
@@ -204,46 +202,42 @@ def yes_no(question):
 
 ## Deployment
 
-### Requirements
-
-### Gitpod
-This section should describe the process someone would have to go through to get the local working in gitpod.  Such as install requirements.txt  and setting up a creds.json file that is in the gitignore and keeping their workspace.
-
-If you have project settings required such as a creds.json file from the GOOGLE DRIVE API acess, please provide an example of that file in the writeup with the project key values:
-```$python
-{
-    "type": "service_account",
-    "project_id": "<YOUR_VALUE>",
-    "private_key_id": "<YOUR_VALUE>",
-    "private_key": "<YOUR_VALUE>",
-    "client_email": "<YOUR_VALUE>",
-    "client_id": "<YOUR_VALUE>",
-    "auth_uri": "https://accoutns.google.com/0/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cer_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "clien_x509_cert_url": "<YOUR_VALUE>"
-}
-```
-
-If you have any dependencies, you should instruct users to install them
-```$python
-pip3 install -r requirements.txt
-```
-
-
-
 ### Heroku
+This project runs in the Code Institute provided Python Terminal simulator. The project repository is hosted on GitHub and was deployed to Heroku using the following steps:
+1. From the Heroku dashboard, choose New > Create new app
 ![image](https://user-images.githubusercontent.com/84344402/134727186-9f0dfafc-5120-44cc-9209-90eb034a0a79.png)
+
+2. In the app name field, enter a unique name for the app. Choose the region (Europe) and select 'Create App'
 ![image](https://user-images.githubusercontent.com/84344402/134727452-cd6a98e8-707b-47d4-a5be-308a98686927.png)
+
+3. Click on the 'Settings' tab
 ![image](https://user-images.githubusercontent.com/84344402/134727805-094eda93-7cc2-4706-8502-90328cc18646.png)
+
+4. Select 'Add buildpack'
 ![image](https://user-images.githubusercontent.com/84344402/134728080-e2b67f15-3e4c-42e0-9cad-69541ae922ee.png)
+
+5. First, choose Python and click 'Save changes'
 ![image](https://user-images.githubusercontent.com/84344402/134728146-26f39c89-8747-419d-bc7f-406181bbe576.png)
+
+6. Next, select nodejs and again click 'Save changes'
 ![image](https://user-images.githubusercontent.com/84344402/134728191-63929f98-654c-43a4-a732-e98563b7ec66.png)
+
+7. Select the 'Deploy' tab
 ![image](https://user-images.githubusercontent.com/84344402/134728674-3b2737d8-3d12-4ef8-917f-086cc792b03d.png)
+
+8. Click 'GitHub'
 ![image](https://user-images.githubusercontent.com/84344402/134729055-02112055-ae23-4c5d-97e9-5a8aaad1891c.png)
+
+9. Enter the name of the repository and click search
 ![image](https://user-images.githubusercontent.com/84344402/134729099-5b68a72f-f0c8-49ab-bd55-ad6db45a664c.png)
+
+10. Select the branch of the project for deployment ('Main' in this case)
 ![image](https://user-images.githubusercontent.com/84344402/134729273-a8fb68eb-d0cc-4331-b958-363b7de96d52.png)
+
+11. In the 'Manual Deploy' section, click 'Deploy'
 ![image](https://user-images.githubusercontent.com/84344402/134729383-70980a37-810a-4161-976b-3e6663a30b1d.png)
+
+12. When app has been deployed successfully, the page updates with a link to view the app
 ![image](https://user-images.githubusercontent.com/84344402/134729634-35e5c778-0071-4747-b72a-37491f01981a.png)
 
 ## Credits
