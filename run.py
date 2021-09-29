@@ -40,6 +40,9 @@ HANGMAN_PICS = ['''
         ===''']
 
 class Hangman:
+    """
+    Creates an instance of the hangman game
+    """
     def __init__(self):
         self.word = random.choice(words)
         self.stage = 0
@@ -50,6 +53,10 @@ class Hangman:
         self.games_won = 0
 
     def display_hangman(self):
+        """
+        Displays the hangman image relevant to the amount of lives remaining
+        Dsiplays the random word with letters represented by dashes
+        """
         print(Fore.CYAN + HANGMAN_PICS[self.stage])
         print('\n')
         print(self.progress + Style.RESET_ALL)
@@ -121,7 +128,7 @@ class Hangman:
 
     def play_again(self):
         """
-        Asks user if the want to play again by entering Y or N
+        Asks user if they want to play again by entering Y or N
         Calls display_hangman function while user wants to play again
         """
         play = input(f'{Fore.YELLOW}Would you like to play again? (Y/N)').strip().upper()
