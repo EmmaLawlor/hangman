@@ -38,16 +38,41 @@ Generate after readme is complete for UX and below
 Paragraph or bullet points of how the user initiates the program and interfaces with it. You could have videos of each bit if you want and ditact what the user should do.
 
 ## Features
-Use this section to itemize the features of your project. 
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-It's easiest to break this section down into piece parts or core functionality blocks such as data upload, user input, analysis and data output; focusing on the atomic functions and data model(s) you created to make the program work. 
-
 
 ### Implemented Features
-In each subsection, write out what the feature is for and what value it adds. If there is terminal interaction or output associated with the function, include a screenshot.
+- Start of game: On visiting the site, the user is greeted witha "Let's Play Hangman" message as well as an empty hangman image and the entire word represented by dashes, since the user has not yet made any guesses. The user is also prompted to guess a letter by asking for input "Choose a letter:"
 
+![image](https://user-images.githubusercontent.com/84344402/135350017-8529ced5-17c1-4ebe-9009-3a3c2b53ef5d.png)
+
+- Input Validation: The user's chosen letter is checked against a number of conditions. 
+  - If input is invalid, the user is alerted and promplted to choose again
+  
+  ![image](https://user-images.githubusercontent.com/84344402/135350370-d13a8a78-d68c-4792-b08d-ee769673100d.png)#
+  
+  - If the user correctly chooses a letter in the word, text is displayed green and the dashes in the word are replaced with the correct letter as appropriate
+  
+  ![image](https://user-images.githubusercontent.com/84344402/135350606-1b86aa18-a49f-482e-94cc-34b08bbf8e95.png)
+  
+  - If the user chooses a letter which is not in the word, the text is displayed in red and the hangman image is updated to the next stage indicating the loss of a life
+  
+  ![image](https://user-images.githubusercontent.com/84344402/135350767-0ed0d1c3-6a91-43cb-8c1c-d5201f0b4d88.png)
+  
+  - If the user chooses a letter that they have already guessed, they are asked to try again without the loss of an extra life
+  
+  ![image](https://user-images.githubusercontent.com/84344402/135351977-6df1edce-dbe8-4ae8-8567-6b31ff5c33b9.png)
+
+- End of Game:
+  - If the user has coorrectly completed the word or guessed the word, they get a congratulations message in green text and are asked if they want to play again
+  
+  ![image](https://user-images.githubusercontent.com/84344402/135351418-5d434ad0-9fcd-4995-b86b-4afb0ea45472.png)
+  
+  - If the user fails to guess the word correctly, they get a game over message in red text and are again asked if they would like to play again
+  
+  ![image](https://user-images.githubusercontent.com/84344402/135351558-030edaa5-2956-44fb-b69e-3fda96f1a665.png)
+
+  - If the user chooses not to play the game their result is displayed in terms of number of games won out of number of games played
+  
+  ![image](https://user-images.githubusercontent.com/84344402/135351720-14d29960-a874-4f58-ad78-34bb79e5afbc.png)
 
 ### Future Features
 
