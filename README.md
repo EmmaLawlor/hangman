@@ -1,17 +1,3 @@
-## Helpful tools
-
-Markdown's not all that easy so sometimes you may want to use some tools to make tables. 
-
-- [Markdown Cheatsheet](https://guides.github.com/features/mastering-markdown/)
-- [markdown table generator](https://www.tablesgenerator.com/markdown_tables) - used to help with documentation table formatting
-- [mardown table of contents generator](https://ecotrust-canada.github.io/markdown-toc/) - used to create table of contents (be weary it does have some bugs if you have dashes or trailing spaces in your headers)
-- [readme.so](https://readme.so/) - if you don't want to learn markdown, this tool might help you
-
-# Table of Contents
-Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a table of contents.  This will help assessors to see the structure of your readme. Just test it out ast this tool isn't perfect. It tends to mess up with special characters like dashes.
-
-====================================== The Sections you Fill in are below ==============================
-
 # PROJECT NAME
 Hangman
 
@@ -114,8 +100,6 @@ The __init__ method initialises the following attributes for use in all instance
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your features and ensure that they all work as intended in an easy and straightforward way for the users to achieve their goals.
-
 ### Validation Testing
 You should try to ensure you code is valid and follows proper indentation.  In this section you should write up any websites you used to validate your code. As your projects becomes more complex these tools may change.
 
@@ -129,56 +113,7 @@ There is a space before the # and after it to skip the quality assurance for tha
 
 ### Manual Testing
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Startup:
-    1. User enters name
-    2. try to submit no entry, blank name not allowed
-    3. Try to submit the name with spaces
-    4. Try to submit the name as special characters
-    5. Try to submit the name as calling a function in the code
-   
-    
-Here is a [Manual Testing Template](https://docs.google.com/spreadsheets/d/189VpSeEG9oevSRhvb2WZl8zCk9L3s2iWQyrJ_1jjAGQ/edit?usp=sharing) that you can use as a starting point to keep track of your testing efforts. Make a copy of it in your own account and update as needed to reflect the browsers you are testing and features.  
-
-Or you could open a Project in github and write your tests there in a basic khanban board. 
-1. Click on the projects menu:
-
-![image](https://user-images.githubusercontent.com/23039742/132130197-465d3db9-04e0-4843-9509-041cd0639551.png)
-
-2. Click on the create project button:
-
-![image](https://user-images.githubusercontent.com/23039742/132130216-1623af38-827f-4fd6-9729-c9bc5a1e5485.png)
-
-3. Select the Basic Kanban template
-
-![image](https://user-images.githubusercontent.com/23039742/132130414-4e60b081-555f-49e3-a446-da6fc88951f2.png)
-
-4. Fill in the information and click Create
-
-![image](https://user-images.githubusercontent.com/23039742/132130417-f6051c42-4a1d-4faf-8ed7-780215d1805d.png)
-
-4. Click the + sign on the project board to craete a new Test
-
-![image](https://user-images.githubusercontent.com/23039742/132130433-dcb741ac-9deb-401a-8801-6e3d1861c7f7.png)
-
-5. You can use the templates provided to steal the checkbox mardown to write out your test by clicking the ... button and selecting edit note option:
-
-![image](https://user-images.githubusercontent.com/23039742/132130460-2314a026-ed12-493c-a4e9-16726e812b94.png)
-
-6. Just copy the example text you want:
-
-![image](https://user-images.githubusercontent.com/23039742/132130503-d4611154-d62b-4eff-9ec5-004fd89f440e.png)
-
-7. Then you can past that into your new note and update as needed then save:
-
-![image](https://user-images.githubusercontent.com/23039742/132130729-161ff2e6-65c0-4344-a4d4-e3baf4670a24.png)
-
-8. Then when you start to test, just move it into progress and update as you finish the tasks in your test.  If you've used checkboxes to track the testing tasks, you should mark them off and then once all are done, you can move the item to the done list.
-
-There are ways to create issues with these project cards so you don't have to write up everything. You can create an issue from a test item. 
-
-For more information you can visit: https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards 
+A template for test cases was created in the GitHub repository for this project. All instances of possible correct/incorrect user input was tested and results recorded using these test case templates. The testing can be found in the GitHub Issues section [here](https://github.com/EmmaLawlor/hangman/issues?q=is%3Aissue+is%3Aclosed)
 
 
 ### Defect Tracking
