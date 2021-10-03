@@ -207,4 +207,6 @@ This project runs in the Code Institute provided Python Terminal simulator. The 
 
 ### Acknowledgments
 
+- A sepcial thanks, as always, to my mentor Malia for her invaluable help, feedback and advice. 
+- The logic and code for this Hangman game was inspired by and adapted from [this tutorial](https://www.youtube.com/c/KiteHQ)
 - Code for replacing underscores with correct letter guesses adapted from [this tutorial](https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/hangman.py)
