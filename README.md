@@ -5,7 +5,7 @@ Hangman
 Emma Lawlor
 
 ## Project Overview
-A simple interactive hangman game, written in Python. This game randomly chooses a word from a list of words. The user is then prompted to guess the letters of the word, or the word itself, until they have correctly guessed the word or until they run out of lives. Each incorrect answer adds to the hangman image, with the game ending when the hangman has been fully completed. 
+A simple interactive hangman game, written in Python. This game randomly chooses a word from a list of words. The user is then prompted to guess the letters of the word, or the word itself, until they have correctly identified the word or until they run out of lives. Each incorrect answer adds to the hangman image, with the game ending when the hangman has been fully completed. 
 
 ![Google Chrome - Python Terminal by Code Institute - Google Chrome](https://user-images.githubusercontent.com/84344402/135355526-41012bfc-9773-4a9c-8ed8-eb6079be6303.gif)
 
@@ -25,12 +25,12 @@ Generate after readme is complete for UX and below
 ## Features
 
 ### Implemented Features
-- Start of game: On visiting the site, the user is greeted witha "Let's Play Hangman" message as well as an empty hangman image and the entire word represented by dashes, since the user has not yet made any guesses. The user is also prompted to guess a letter by asking for input "Choose a letter:"
+- Start of game: On visiting the site, the user is greeted with a "Let's Play Hangman" message as well as an empty hangman image and the entire word represented by dashes, since the user has not yet made any guesses. The user is also prompted to guess a letter by asking for input "Choose a letter:"
 
 ![image](https://user-images.githubusercontent.com/84344402/135350017-8529ced5-17c1-4ebe-9009-3a3c2b53ef5d.png)
 
 - Input Validation: The user's chosen letter is checked against a number of conditions. 
-  - If input is invalid, the user is alerted and promplted to choose again
+  - If input is invalid, the user is alerted and prompted to choose again
   
   ![image](https://user-images.githubusercontent.com/84344402/135350370-d13a8a78-d68c-4792-b08d-ee769673100d.png)#
   
@@ -47,25 +47,35 @@ Generate after readme is complete for UX and below
   ![image](https://user-images.githubusercontent.com/84344402/135351977-6df1edce-dbe8-4ae8-8567-6b31ff5c33b9.png)
 
 - End of Game:
-  - If the user has coorrectly completed the word or guessed the word, they get a congratulations message in green text and are asked if they want to play again
+  - If the user has correctly completed the word or guessed the word, they get a congratulations message in green text and are asked if they want to play again
   
   ![image](https://user-images.githubusercontent.com/84344402/135351418-5d434ad0-9fcd-4995-b86b-4afb0ea45472.png)
   
-  - If the user fails to guess the word correctly, they get a game over message in red text and are again asked if they would like to play again
+  - If the user fails to guess the word correctly, they get a game over message in red text and are asked if they would like to play again
   
   ![image](https://user-images.githubusercontent.com/84344402/135351558-030edaa5-2956-44fb-b69e-3fda96f1a665.png)
 
-  - If the user chooses not to play the game their result is displayed in terms of number of games won out of number of games played
+  - If the user chooses not to play the game their result is displayed in terms of number of games won out of total number of games played
   
   ![image](https://user-images.githubusercontent.com/84344402/135351720-14d29960-a874-4f58-ad78-34bb79e5afbc.png)
+  
+ - Data Collection:
+ 
+     - In designing the game, every effort was made to try to ensure successful collection of data from the user when choosing a letter. 
+     - Letters are used in their lowercase format by using the .lower() method on the user's input. Because of this, user's can enter both upper or lowercase letters, with the game functioning normally in all scenarios. 
+     - Any leading or trailing spaces before or after the user's guessed letter is trimmed using the .strip() method. This ensures that even if user's accidentally enter spaces, only the letter entered will by evaluated as their guess. 
+     - The application of both of these methods to the user's input enhances the user experience. They ensure that these minor r#typing errors can be overlooked by the app and that the game will fucntion as expected when they are encountered. 
+     ![image](https://user-images.githubusercontent.com/84344402/135769105-ea107fbe-ce50-4b86-97e2-cea9c31a4abf.png) 
 
 ### Future Features
 
 - Score Tracking: By linking with Google Sheets, the game could ask the user for their name and email address, store their score details and email them a copy of their results upon exiting the game. 
+- Personalied Messages: Through use of a 'user' class, the game could collect the user's first name and use this to personalise the welcome message and the end of game text. 
+- Rules: At the start of the game, the user could be given the option to have the rules of Hangman displayed, explaining how to play the game. 
 
 ## Design Documents
 
-- In the early planning stages, a flowchart was drawn up to help visualise the setps required to create a functioning hangman game. 
+- In the early planning stages, a flowchart was drawn up to help visualise the steps required to create a functioning hangman game. 
 - This chart was helpful to the developer when creating functions as the logic of the game was clearly broken down into simple steps.
 - [This flowchart](https://1drv.ms/b/s!AtrJulJDGsm2qFf5wKQGuJDN1MRH) was created using [Lucidchart](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier1_mixed_search_brand_exact_&km_CPC_CampaignId=1490375427&km_CPC_AdGroupID=55688909257&km_CPC_Keyword=lucidcharts&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=442433236001&km_CPC_TargetID=aud-826163889020:kwd-84176206937&km_CPC_Country=20483&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&mkwid=sMDuh5elr_pcrid_442433236001_pkw_lucidcharts_pmt_e_pdv_c_slid__pgrid_55688909257_ptaid_aud-826163889020:kwd-84176206937_&gclid=Cj0KCQjw1ouKBhC5ARIsAHXNMI-XHJRavE5VCyXoRZMUJrufGkLIFrq_iz1oKO4xAXMed81uEqSRagMaAsA5EALw_wcB)
 ![image](https://user-images.githubusercontent.com/84344402/133690510-8f1d770e-ccfe-4bea-908d-a1321736cb1d.png)
