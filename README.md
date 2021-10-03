@@ -116,7 +116,13 @@ The run.py file of this repository was checked using the [Pep8Online](http://pep
 
 ![image](https://user-images.githubusercontent.com/84344402/135769749-385a30a8-2f20-4b70-8a26-34168ac6e5a6.png)
 
-These warnings were overwritten by adding '  # noqa' to the end of each line which was identified as being too long. This tells the linter to gnore any issues with the particular line. It was decided not to break the the code into shorter lines for readability and future maintainability of the file. 
+These warnings were overwritten by adding '  # noqa' to the end of each line which was identified as being too long, as shown below. This tells the linter to gnore any issues with the particular line. It was decided not to break the the code into shorter lines for readability and future maintainability of the file. 
+
+![image](https://user-images.githubusercontent.com/84344402/135770089-3ecf6934-c4a8-43ca-9ab9-3cc6cb6a8844.png)
+
+This eliminated all previous errors and on rechecking the run.py file, no errors were found in the code.
+
+![image](https://user-images.githubusercontent.com/84344402/135770124-bc7d56e8-3817-4d16-a347-579cd3b7f1cc.png)
 
 ### Manual Testing
 
