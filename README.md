@@ -130,9 +130,9 @@ This eliminated all previous errors and on rechecking the run.py file, no errors
 
 ![image](https://user-images.githubusercontent.com/84344402/135770395-1b3c44d3-e910-4293-aa2a-87239f5214ff.png)
 
-This was corrected by moving all list items in by 1 space to align with the square brackets. All instances of trailing whitespace identified by the linter were deleted. 
+This was corrected by moving all list items in line with the first list item. All instances of trailing whitespace identified by the linter were deleted. 
 
-![image](https://user-images.githubusercontent.com/84344402/135770683-160a6171-0069-47c2-ac70-b932aab1dc87.png)
+![image](https://user-images.githubusercontent.com/84344402/135772854-dfe52a67-3699-4b11-ab0e-214c1c9ed78d.png)
 
 These changes corrected all errors and warnings and rec-checking the words.py file returned no errors. 
 
