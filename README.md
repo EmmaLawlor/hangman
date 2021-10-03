@@ -111,15 +111,12 @@ The __init__ method initialises the following attributes for use in all instance
 ## Testing
 
 ### Validation Testing
-You should try to ensure you code is valid and follows proper indentation.  In this section you should write up any websites you used to validate your code. As your projects becomes more complex these tools may change.
 
-- [PEP8 Validator](http://pep8online.com/) include a screenshot of results
+The run.py file of this repository was checked using the [Pep8Online](http://pep8online.com/) validator. The validator returned a number of errors for lines of code being too long, over 79 characters, as seen here. 
 
-If the line is too long just add 
-```$python 
-# noqa
-```
-There is a space before the # and after it to skip the quality assurance for that line.
+![image](https://user-images.githubusercontent.com/84344402/135769749-385a30a8-2f20-4b70-8a26-34168ac6e5a6.png)
+
+These warnings were overwritten by adding '  # noqa' to the end of each line which was identified as being too long. This tells the linter to gnore any issues with the particular line. It was decided not to break the the code into shorter lines for readability and future maintainability of the file. 
 
 ### Manual Testing
 
