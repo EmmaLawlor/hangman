@@ -112,7 +112,9 @@ The __init__ method initialises the following attributes for use in all instance
 
 ### Validation Testing
 
-The run.py file of this repository was checked using the [Pep8Online](http://pep8online.com/) validator. The validator returned a number of errors for lines of code being too long, over 79 characters, as seen here. 
+Both Python files of this repository were checked using the [Pep8Online](http://pep8online.com/) validator.
+
+1.  The run.py file returned a number of errors for lines of code being too long, over 79 characters, as seen here. 
 
 ![image](https://user-images.githubusercontent.com/84344402/135769749-385a30a8-2f20-4b70-8a26-34168ac6e5a6.png)
 
@@ -123,6 +125,16 @@ These warnings were overwritten by adding '  # noqa' to the end of each line whi
 This eliminated all previous errors and on rechecking the run.py file, no errors were found in the code.
 
 ![image](https://user-images.githubusercontent.com/84344402/135770124-bc7d56e8-3817-4d16-a347-579cd3b7f1cc.png)
+
+2. The words.py file returned a large number of errors and warnings, relating to formatting of the list of words. The list was no properly indented, in line with the square brackets and several list items had trailing whitespace. 
+
+![image](https://user-images.githubusercontent.com/84344402/135770395-1b3c44d3-e910-4293-aa2a-87239f5214ff.png)
+
+This was corrected by moving all list items in by 1 space to align with the square brackets. All instances of trailing whitesoace identified by the linter were deleted. 
+
+These changes corrected all errors and warnings and rec-checking the words.py file returned no errors. 
+
+![image](https://user-images.githubusercontent.com/84344402/135770600-460a3e45-8910-47fb-9010-6d8be70029c5.png)
 
 ### Manual Testing
 
