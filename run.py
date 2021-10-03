@@ -2,6 +2,8 @@ import random
 from words import words
 from colorama import Fore, Style
 
+# My solution for this game was inspired by the following tutorial https://www.youtube.com/c/KiteHQ  # noqa
+
 HANGMAN_PICS = ['''
      +---+
          |
@@ -49,6 +51,8 @@ class Hangman:
         self.stage = 0
         self.guessed_letters = []
         self.guessed_words = []
+        # Solution for displaying the hidden word taken from this tutorial https://www.youtube.com/c/KiteHQ  # noqa
+        # With underscores replaced by dashes
         self.progress = '-' * len(self.word)
         self.games_played = 0
         self.games_won = 0
@@ -93,7 +97,7 @@ class Hangman:
                         print(f'{Fore.GREEN}{guess} is in the word!{Style.RESET_ALL}')  # noqa
                         print('\n')
                         self.guessed_letters.append(guess)
-                        # code for replacing underscores with letters adapted from  # noqa
+                        # code for replacing dashes with letters adapted from  # noqa
                         # https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/hangman.py
                         word_as_list = list(self.progress)
                         indices = [i for i, letter in enumerate(self.word) if letter == guess]  # noqa
