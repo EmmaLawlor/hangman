@@ -73,7 +73,7 @@ class Hangman:
         """
         while self.stage < 6:
             self.display_hangman()
-            guess = input(f'{Fore.YELLOW}Choose a letter: {Style.RESET_ALL}').lower().strip()
+            guess = input(f'{Fore.YELLOW}Choose a letter: {Style.RESET_ALL}').lower().strip()  # noqa
             print('\n')
             if guess.isalpha() and len(guess) == 1:
                 if guess not in self.word:
@@ -81,7 +81,7 @@ class Hangman:
                         print(f'You already guessed {guess}, try again')
                         print('\n')
                     else:
-                        print(f'{Fore.RED}{guess} is not in the word, try again{Style.RESET_ALL}')
+                        print(f'{Fore.RED}{guess} is not in the word, try again{Style.RESET_ALL}')  # noqa
                         print('\n')
                         self.stage += 1
                         self.guessed_letters.append(guess)
@@ -90,34 +90,34 @@ class Hangman:
                         print(f'You already guessed {guess}, try again')
                         print('\n')
                     else:
-                        print(f'{Fore.GREEN}{guess} is in the word!{Style.RESET_ALL}')
+                        print(f'{Fore.GREEN}{guess} is in the word!{Style.RESET_ALL}')  # noqa
                         print('\n')
                         self.guessed_letters.append(guess)
-                        # code for replacing underscores with letters adapted from
+                        # code for replacing underscores with letters adapted from  # noqa
                         # https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/hangman.py
                         word_as_list = list(self.progress)
-                        indices = [i for i, letter in enumerate(self.word) if letter == guess]
+                        indices = [i for i, letter in enumerate(self.word) if letter == guess]  # noqa
                         for index in indices:
                             word_as_list[index] = guess
                             self.progress = "".join(word_as_list)
                         if "-" not in self.progress:
-                            print(f'{Fore.GREEN}Congrats! You correctly guessed the answer: {self.word}{Style.RESET_ALL}')
+                            print(f'{Fore.GREEN}Congrats! You correctly guessed the answer: {self.word}{Style.RESET_ALL}')  # noqa
                             print('\n')
                             self.games_won += 1
                             break
 
             elif guess.isalpha() and guess == self.word:
-                print(f'{Fore.GREEN}Congrats! You correctly guessed the answer: {self.word}{Style.RESET_ALL}')
+                print(f'{Fore.GREEN}Congrats! You correctly guessed the answer: {self.word}{Style.RESET_ALL}')  # noqa
                 print('\n')
                 self.games_won += 1
                 break
 
-            elif guess.isalpha() and guess not in self.word and guess in self.guessed_words:
+            elif guess.isalpha() and guess not in self.word and guess in self.guessed_words:  # noqa
                 print(f'You already guessed {guess}, try again')
                 print('\n')
 
-            elif guess.isalpha() and guess not in self.word and guess not in self.guessed_words:
-                print(f'{Fore.RED}{guess} is not the word, try again{Style.RESET_ALL}')
+            elif guess.isalpha() and guess not in self.word and guess not in self.guessed_words:  # noqa
+                print(f'{Fore.RED}{guess} is not the word, try again{Style.RESET_ALL}')  # noqa
                 print('\n')
                 self.stage += 1
                 self.guessed_words.append(guess)
@@ -127,7 +127,7 @@ class Hangman:
         if self.stage >= 6:
             print(Fore.CYAN + HANGMAN_PICS[self.stage])
             print('\n')
-            print(f'{Fore.RED}Game Over! The word was {self.word}{Style.RESET_ALL}')
+            print(f'{Fore.RED}Game Over! The word was {self.word}{Style.RESET_ALL}')  # noqa
             print('\n')
         self.play_again()
 
@@ -136,7 +136,7 @@ class Hangman:
         Asks user if they want to play again by entering Y or N
         Calls display_hangman function while user wants to play again
         """
-        play = input(f'{Fore.YELLOW}Would you like to play again? (Y/N)').strip().upper()
+        play = input(f'{Fore.YELLOW}Would you like to play again? (Y/N)').strip().upper()  # noqa
         print('\n')
         if play == 'Y':
             self.stage = 0
