@@ -132,6 +132,8 @@ This eliminated all previous errors and on rechecking the run.py file, no errors
 
 This was corrected by moving all list items in by 1 space to align with the square brackets. All instances of trailing whitesoace identified by the linter were deleted. 
 
+![image](https://user-images.githubusercontent.com/84344402/135770683-160a6171-0069-47c2-ac70-b932aab1dc87.png)
+
 These changes corrected all errors and warnings and rec-checking the words.py file returned no errors. 
 
 ![image](https://user-images.githubusercontent.com/84344402/135770600-460a3e45-8910-47fb-9010-6d8be70029c5.png)
