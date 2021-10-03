@@ -147,11 +147,29 @@ A template for test cases was created in the GitHub repository for this project.
 
 ### Defects of Note
 - Any defects which occurred during development were tracked using the GitHub Issues section of this repository, which can be found [here](https://github.com/EmmaLawlor/hangman/issues).
+![image](https://user-images.githubusercontent.com/84344402/135771710-36ca6cf2-8dd0-40cc-b45e-fd36bd5034f3.png)
 - Details of each bug were noted as they were discovered, with screenshots taken to demonstrate the problem where possible.
+- Some other minor bugs which occured during development were not documented in this way as they were extremely quick and simple to fix. 
 - The GitHub Issues section allowed for closeout of defects as they were rectified, again using screenshots to show the solution when possible.
-- 
+
 ### Outstanding Defects
 - No outstanding defects have been noted. 
+
+## Commit History
+
+On review of this repository, an error in git commit messages was noted. For a time, when editing the README file directly in GitHub, the commit message was mistakenly entered in the 2nd entry field for optional extra data as seen here.
+
+![image](https://user-images.githubusercontent.com/84344402/135771796-21da2f27-e1b4-4c5c-b338-436e463b8912.png)
+
+This has resulted in the following main message for some commits.
+
+![image](https://user-images.githubusercontent.com/84344402/135771827-e9cfb19a-7fa8-482d-b803-d0da2eaee8e7.png)
+
+The intended commit message can be seen by clicking the ... beside the main message, as seen here.
+
+![image](https://user-images.githubusercontent.com/84344402/135771851-1e131e1c-dab8-4dd2-8178-22578352f9dc.png)
+
+Though this was noticed and corrected going forward, it was decided not to edit the effected commit messages. On researching the topic, while I learned it is possible to change commit messages, it is not recommended as it can confuse the commit history and make future development difficult. 
 
 ## Deployment
 
