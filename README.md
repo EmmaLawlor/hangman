@@ -216,6 +216,27 @@ This project runs in the Code Institute provided Python Terminal simulator. The 
 12. When the app has been deployed successfully, the page updates with a link to view the app
 ![image](https://user-images.githubusercontent.com/84344402/134729634-35e5c778-0071-4747-b72a-37491f01981a.png)
 
+
+### Gitpod
+
+To run locally in Gitpod use the following steps:
+
+1. Navigate to the [GitHub repository](https://github.com/EmmaLawlor/hangman) for the project
+
+![image](https://user-images.githubusercontent.com/84344402/135773220-de0823ae-552f-4721-a057-31122d6567a3.png)
+
+2. Ensuring the Gitpod extension is installed in Google Chrome, click the green Gitpod button
+
+![image](https://user-images.githubusercontent.com/84344402/135773232-21d146fc-a7ba-4e4c-aece-25503138fee5.png)
+
+3. When the workspace launches, type "pip3 install -r requirements.txt" in the terminal to install requirements
+
+![image](https://user-images.githubusercontent.com/84344402/135773271-c6be48f0-4106-42c5-a2b3-2a0cfd80df38.png)
+
+4. Type "python3 run.py" to run the project in the terminal
+
+![image](https://user-images.githubusercontent.com/84344402/135773303-45a2a355-7c23-4dda-85b5-87b3389fbe6e.png)
+
 ## Credits
 
 -[Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
