@@ -45,6 +45,11 @@ HANGMAN_PICS = ['''
 class Hangman:
     """
     Creates an instance of the hangman game
+    Initializes all attributes required for gameplay
+    Displays the hangman to the user
+    Runs the game by asking the user for input
+    Evaluates user input
+    Determines result & checks if user wants to play again
     """
     def __init__(self):
         self.word = random.choice(words)
