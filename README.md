@@ -92,6 +92,11 @@ The __init__ method initialises the following attributes for use in all instance
 - self.games_played: Starting at 0, this number is increased by 1 each time the user completes a game. 
 - self.games_won: Again starting at 0, this is increased by 1 each time the user correctly completes the word and wins the game. A combination of games_played and games_won is used to return the user's overall result for the session when they choose to exit the game.  
 
+The display_hangman function uses the self keyword to access the attributes of the hangman class. It displays the first stage of the hangman image to the user. It also displays the randomly generated word as a series of dashes, representing the letters the user needs to guess. 
+
+The play_hangman function again uses the self keyword to access the attributes of the hangman class. While the user still has lives remaining, this function asks the user to guess a letter or word. The user's guess is then checked against the word in play. The user gets a message returned to them indicated if their guess is correct or incorrect. Correct letter guesses are shown in the word, replacing the dash in the relevant position. Incorrect guesses updates the hangman image, showing the hangman in it's next stage indicating the loss of a life. The game ends when the user has run out lives, has guessed all letters correctly r has correctly guessed the word. 
+
+The play_again function also uses the self keyword to access the class attributes. At the end of the game the user is asked if they would like to play again. If they play again all attributes are re-initialised and the play-hangman function is called again. If the user does not wish to play again they get a 'thanks for playing' message as well as their result for the session. The result is displayed as the amount of games won out of the total number of games played in the session. 
 
 ## Libraries used
 - Random module was imported to allow the program to select a random word from the words.py file for use in gameplay. 
