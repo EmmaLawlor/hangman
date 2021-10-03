@@ -13,7 +13,30 @@ Deployed Site:
 https://hangman-emma-lawlor.herokuapp.com/
 
 ## Table of Contents
-Generate after readme is complete for UX and below
+- [PROJECT NAME](#project-name)
+  * [Author](#author)
+  * [Project Overview](#project-overview)
+  * [Table of Contents](#table-of-contents)
+  * [How To Play](#how-to-play)
+  * [Features](#features)
+    + [Implemented Features](#implemented-features)
+    + [Future Features](#future-features)
+  * [Design Documents](#design-documents)
+  * [Data Model](#data-model)
+  * [Libraries used](#libraries-used)
+  * [Testing](#testing)
+    + [Validation Testing](#validation-testing)
+    + [Manual Testing](#manual-testing)
+    + [Defect Tracking](#defect-tracking)
+    + [Defects of Note](#defects-of-note)
+    + [Outstanding Defects](#outstanding-defects)
+  * [Commit History](#commit-history)
+  * [Deployment](#deployment)
+    + [Heroku](#heroku)
+    + [Gitpod](#gitpod)
+  * [Credits](#credits)
+    + [Content](#content)
+    + [Acknowledgments](#acknowledgments)
 
 ## How To Play
 - On visiting the site, the game initialises with a "Let's Play Hangman" message
@@ -255,3 +278,4 @@ To run locally in Gitpod use the following steps:
 - The logic and code for this Hangman game was inspired by and adapted from [this tutorial](https://www.youtube.com/c/KiteHQ)
 - Code for replacing underscores with correct letter guesses adapted from [this tutorial](https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/hangman.py)
 - This readme file was checked for spelling and grammar issues using [Grammarly](https://app.grammarly.com/)
+- Readme table of contents created using (https://ecotrust-canada.github.io/markdown-toc/)
